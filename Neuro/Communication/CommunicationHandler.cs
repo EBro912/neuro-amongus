@@ -27,7 +27,6 @@ public sealed class CommunicationHandler : MonoBehaviour
 
     public void FixedUpdate()
     {
-        if (!socket.Connected) return;
         if (!ShipStatus.Instance) return;
         if (MeetingHud.Instance) return;
         if (Minigame.Instance) return;
